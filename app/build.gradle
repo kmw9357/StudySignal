@@ -12,6 +12,11 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        // 뷰바인딩
+        viewBinding {
+            enabled = true
+        }
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -41,4 +49,7 @@ dependencies {
 
     //UI
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
 }
