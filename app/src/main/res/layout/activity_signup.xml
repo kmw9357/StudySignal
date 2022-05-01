@@ -128,7 +128,7 @@
         android:id="@+id/completeBtnSginup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="완료"
+        android:text="@string/success"
         android:textSize="20dp"
         android:backgroundTint="@color/maincolr"
         app:layout_constraintTop_toBottomOf="@id/nicknameEtSignup"
