@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/barTopSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maincolr"
+        android:text="    회원가입"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름(name)"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/barTopSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <EditText
+        android:id="@+id/nameEtSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름을 입력하세요"
+        app:layout_constraintTop_toBottomOf="@+id/nameTvSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+    <TextView
+        android:id="@+id/genderTvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameEtSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/manCbSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남성"
+        app:layout_constraintTop_toBottomOf="@id/genderTvSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="60dp"
+        />
+
+    <CheckBox
+        android:id="@+id/womenCbSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성"
+        app:layout_constraintTop_toBottomOf="@id/genderTvSignup"
+        app:layout_constraintLeft_toRightOf="@id/manCbSignup"
+        android:layout_marginLeft="60dp"
+         />
+
+    <TextView
+        android:id="@+id/birthdayTvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/manCbSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <EditText
+        android:id="@+id/birthdayEtSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex) 20000117"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayTvSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nicknameTvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayEtSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <EditText
+        android:id="@+id/nicknameEtSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임을 입력하세요"
+        app:layout_constraintTop_toBottomOf="@id/nicknameTvSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+    <Button
+        android:id="@+id/completeBtnSginup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:textSize="20dp"
+        android:backgroundTint="@color/maincolr"
+        app:layout_constraintTop_toBottomOf="@id/nicknameEtSignup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
