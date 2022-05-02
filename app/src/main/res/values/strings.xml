@@ -13,4 +13,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="success">완료</string>
+    <string name="management">과목 보관함</string>
 </resources>

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.capstone.studysignal.R
 
-class todo : Fragment() {
+class Todo : Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null
@@ -17,7 +17,7 @@ class todo : Fragment() {
         private const val ARG_PARAM2 = "param2"
 
         fun newInstance(param1: String, param2: String) =
-            todo().apply {
+            Todo().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
